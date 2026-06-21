@@ -3,13 +3,13 @@
     <channel>
         <title>Castly</title>
         <item>
-            <title>0.2.0</title>
-            <pubDate>Tue, 16 Jun 2026 23:54:00 +0100</pubDate>
-            <sparkle:version>3</sparkle:version>
-            <sparkle:shortVersionString>0.2.1</sparkle:shortVersionString>
+            <title>0.2.2</title>
+            <pubDate>Sun, 21 Jun 2026 23:40:00 +0100</pubDate>
+            <sparkle:version>4</sparkle:version>
+            <sparkle:shortVersionString>0.2.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://castly.perfectparadox.co.uk/Castly-0.2.1.zip" length="3676422" type="application/octet-stream" sparkle:edSignature="YMjw5UvdiE6p8kiTmlyzhPKEK0FTDeaauapvO6BjkVwG++wIuui+Udr6aDu72+iDcYBQ47KXRUmU/ZR9Bjk0Dg=="/>
+            <enclosure url="https://castly.perfectparadox.co.uk/Castly-0.2.2.zip" length="3713710" type="application/octet-stream" sparkle:edSignature="5aLW+p5YMimaSLex6o5GFj0Am9ZxbLBHaSWobOKILwAiLQv1ASmRhoaSjoKFekoLeoL/GPo4iadNEMYtaY0sDw=="/>
         </item>
     </channel>
 </rss>
