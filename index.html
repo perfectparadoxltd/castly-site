@@ -3,9 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Castly — Paste it the way you meant it, on your Mac</title>
-<meta name="description" content="A menu-bar utility with 54 text transformations applied as you paste — clean URLs, HTML to Markdown, JSON pretty/minify, case changes, lists, encode/dev tools and more. 100% on-device. One-time $9.99, zero telemetry. macOS 14+.">
+<title data-i18n="meta.title">Castly — Paste it the way you meant it, on your Mac</title>
+<meta name="description" data-i18n-attr="content:meta.description" content="A menu-bar utility with 54 text transformations applied as you paste — clean URLs, HTML to Markdown, JSON pretty/minify, case changes, lists, encode/dev tools and more. 100% on-device. One-time $9.99, zero telemetry. macOS 14+.">
 <link rel="canonical" href="https://castly.perfectparadox.co.uk/">
+<link rel="alternate" hreflang="en" href="https://castly.perfectparadox.co.uk/?lang=en">
+<link rel="alternate" hreflang="es" href="https://castly.perfectparadox.co.uk/?lang=es">
+<link rel="alternate" hreflang="fr" href="https://castly.perfectparadox.co.uk/?lang=fr">
+<link rel="alternate" hreflang="de" href="https://castly.perfectparadox.co.uk/?lang=de">
+<link rel="alternate" hreflang="it" href="https://castly.perfectparadox.co.uk/?lang=it">
+<link rel="alternate" hreflang="pt" href="https://castly.perfectparadox.co.uk/?lang=pt">
+<link rel="alternate" hreflang="ja" href="https://castly.perfectparadox.co.uk/?lang=ja">
+<link rel="alternate" hreflang="zh-Hans" href="https://castly.perfectparadox.co.uk/?lang=zh-Hans">
+<link rel="alternate" hreflang="x-default" href="https://castly.perfectparadox.co.uk/">
 <meta property="og:title" content="Castly — Paste it the way you meant it, on your Mac">
 <meta property="og:description" content="54 text transformations from your menu bar: clean URLs, HTML to Markdown, JSON pretty/minify, case changes, lists, slugify, encode/dev tools. All on-device. One-time $9.99, zero telemetry.">
 <meta property="og:type" content="website">
@@ -139,6 +148,12 @@ details.faq-item p{padding:0 0 26px;margin:0;color:#cbc7bf;font-size:16px;line-h
 .d-li::before{content:'•';color:var(--indigo2);animation:bullet 3s ease-in-out infinite}
 .d-li:nth-child(2)::before{animation-delay:.25s}.d-li:nth-child(3)::before{animation-delay:.5s}
 @keyframes bullet{0%,100%{opacity:.4}50%{opacity:1}}
+/* language picker (i18n) */
+.i18n-picker{display:flex;align-items:center;gap:7px}
+.i18n-picker .i18n-globe{font-size:13px;opacity:.7;line-height:1}
+.i18n-picker select{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:6px;padding:7px 28px 7px 10px;cursor:pointer;-webkit-appearance:none;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%238c8a86' stroke-width='1.4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 10px center;transition:.18s}
+.i18n-picker select:hover{color:var(--ink);border-color:var(--indigo2)}
+.i18n-picker select option{background:#0d0d0e;color:var(--ink);text-transform:none}
 </style>
 <script defer data-domain="castly.perfectparadox.co.uk" src="https://analytics.dchv.co.uk/js/script.js"></script>
 <link rel="mask-icon" href="/mask-icon.svg" color="#4F46E5">
@@ -155,21 +170,21 @@ details.faq-item p{padding:0 0 26px;margin:0;color:#cbc7bf;font-size:16px;line-h
 
 <nav>
   <div class="brand">PERFECT&nbsp;PARADOX</div>
-  <div class="links"><a href="#features">Features</a><a href="#buy">Buy</a><a href="/legal/privacy.html">Privacy</a></div>
+  <div class="links"><a href="#features" data-i18n="nav.features">Features</a><a href="#buy" data-i18n="nav.buy">Buy</a><a href="/legal/privacy.html" data-i18n="nav.privacy">Privacy</a></div>
 </nav>
 
-<div id="stickybuy"><div class="sb-l"><b>Castly</b> <span>&mdash; transform text as you paste, on-device</span></div><button class="btn primary" onclick="openCheckout()" style="padding:12px 26px">Buy &middot; $9.99</button></div>
+<div id="stickybuy"><div class="sb-l"><b>Castly</b> <span data-i18n="sticky.tagline">&mdash; transform text as you paste, on-device</span></div><button class="btn primary" onclick="openCheckout()" style="padding:12px 26px" data-i18n="sticky.buy">Buy &middot; $9.99</button></div>
 <div class="page">
 <section class="hero">
   <div class="veil"></div>
   <div class="inner">
-    <div class="kicker">Menu-bar · On-device · No subscription</div>
+    <div class="kicker" data-i18n="hero.kicker">Menu-bar · On-device · No subscription</div>
     <h1>CAST<span class="stroke">LY</span></h1>
-    <p class="sub">Paste it the way you meant it. Copy any text, pick a transformation from your menu bar, and it's ready to paste with ⌘V. Fifty-four fixes, all on your Mac.</p>
+    <p class="sub" data-i18n="hero.sub">Paste it the way you meant it. Copy any text, pick a transformation from your menu bar, and it's ready to paste with ⌘V. Fifty-four fixes, all on your Mac.</p>
     <div class="cta-row">
-      <a href="https://castly.perfectparadox.co.uk/Castly.zip" class="btn primary">Download trial →</a>
-      <button class="btn" onclick="openCheckout()">Buy · $9.99</button>
-      <span class="price-tag">ONE-TIME · 14-DAY TRIAL</span>
+      <a href="https://castly.perfectparadox.co.uk/Castly.zip" class="btn primary" data-i18n="hero.download">Download trial →</a>
+      <button class="btn" onclick="openCheckout()" data-i18n="hero.buy">Buy · $9.99</button>
+      <span class="price-tag" data-i18n="hero.terms">ONE-TIME · 14-DAY TRIAL</span>
     </div>
   </div>
 </section>
@@ -177,21 +192,21 @@ details.faq-item p{padding:0 0 26px;margin:0;color:#cbc7bf;font-size:16px;line-h
 <div class="marquee"><div>CLEAN URLS&nbsp;&nbsp;·&nbsp;&nbsp;<b>ZERO TELEMETRY</b>&nbsp;&nbsp;·&nbsp;&nbsp;HTML → MARKDOWN&nbsp;&nbsp;·&nbsp;&nbsp;<b>ONE-TIME PURCHASE</b>&nbsp;&nbsp;·&nbsp;&nbsp;JSON PRETTY · MINIFY&nbsp;&nbsp;·&nbsp;&nbsp;<b>NOTHING LEAVES YOUR MAC</b>&nbsp;&nbsp;·&nbsp;&nbsp;CLEAN URLS&nbsp;&nbsp;·&nbsp;&nbsp;<b>ZERO TELEMETRY</b>&nbsp;&nbsp;·&nbsp;&nbsp;HTML → MARKDOWN&nbsp;&nbsp;·&nbsp;&nbsp;<b>ONE-TIME PURCHASE</b>&nbsp;&nbsp;·&nbsp;&nbsp;JSON PRETTY · MINIFY&nbsp;&nbsp;·&nbsp;&nbsp;<b>NOTHING LEAVES YOUR MAC</b>&nbsp;&nbsp;·&nbsp;&nbsp;</div></div>
 
 
-<section class="how"><div style="max-width:1100px;margin:0 auto"><div class="sec-label">// How it works</div></div><div class="how-wrap">
-<div class="step"><div class="sn">1</div><h4>Copy<br>some text</h4><p>Grab anything onto your clipboard the way you always do — a messy link, a chunk of HTML, a blob of JSON, a heading that needs case-fixing.</p></div>
-<div class="step"><div class="sn">2</div><h4>Open Castly,<br>pick a fix</h4><p>Click the Castly icon in your menu bar and choose a transformation. It runs instantly on your Mac and lands the clean result back on your clipboard.</p></div>
-<div class="step"><div class="sn">3</div><h4>Paste — done,<br>with ⌘V</h4><p>Paste the transformed text wherever you were headed. No window juggling, no web tool, no copy-paste-into-a-site dance.</p></div>
+<section class="how"><div style="max-width:1100px;margin:0 auto"><div class="sec-label" data-i18n="how.label">// How it works</div></div><div class="how-wrap">
+<div class="step"><div class="sn">1</div><h4 data-i18n="how.1.title">Copy<br>some text</h4><p data-i18n="how.1.body">Grab anything onto your clipboard the way you always do — a messy link, a chunk of HTML, a blob of JSON, a heading that needs case-fixing.</p></div>
+<div class="step"><div class="sn">2</div><h4 data-i18n="how.2.title">Open Castly,<br>pick a fix</h4><p data-i18n="how.2.body">Click the Castly icon in your menu bar and choose a transformation. It runs instantly on your Mac and lands the clean result back on your clipboard.</p></div>
+<div class="step"><div class="sn">3</div><h4 data-i18n="how.3.title">Paste — done,<br>with ⌘V</h4><p data-i18n="how.3.body">Paste the transformed text wherever you were headed. No window juggling, no web tool, no copy-paste-into-a-site dance.</p></div>
 </div></section>
 <section class="appshow" style="padding:120px 56px;background:rgba(10,10,11,.82)">
   <div style="max-width:760px;margin:0 auto">
-    <div class="sec-label">// See it work</div>
+    <div class="sec-label" data-i18n="see.label">// See it work</div>
     <div style="background:#1c1c1e;border:0.5px solid rgba(255,255,255,.12);border-radius:12px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.6);font-family:-apple-system,system-ui,sans-serif;max-width:340px;margin:0 auto">
       <div style="display:flex;align-items:center;justify-content:space-between;padding:11px 14px;background:#2a2a2c;border-bottom:0.5px solid rgba(255,255,255,.08)">
         <span style="font-size:13px;color:#e9e9ea;font-weight:600;display:flex;align-items:center;gap:7px"><span style="width:14px;height:16px;display:inline-block;background:#7C3AED;border-radius:2px 2px 4px 4px"></span>Castly</span>
-        <span style="font-size:11px;color:#8c8a86">⌘V to paste</span>
+        <span style="font-size:11px;color:#8c8a86" data-i18n="see.paste">⌘V to paste</span>
       </div>
       <div style="padding:10px 8px">
-        <div style="display:flex;align-items:center;justify-content:space-between;padding:9px 12px;border-radius:7px;background:#7C3AED;color:#fff;font-size:13px;font-weight:600;margin-bottom:2px">Clean URL<span style="opacity:.85;font-size:11px;font-weight:400">removes utm_ &amp; trackers</span></div>
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:9px 12px;border-radius:7px;background:#7C3AED;color:#fff;font-size:13px;font-weight:600;margin-bottom:2px"><span data-i18n="see.cleanurl">Clean URL</span><span style="opacity:.85;font-size:11px;font-weight:400" data-i18n="see.cleanurl.note">removes utm_ &amp; trackers</span></div>
         <div style="display:flex;align-items:center;justify-content:space-between;padding:9px 12px;font-size:13px;color:#f4f1ea">HTML → Markdown<span style="color:#8c8a86;font-size:11px">⌥2</span></div>
         <div style="display:flex;align-items:center;justify-content:space-between;padding:9px 12px;font-size:13px;color:#f4f1ea">JSON Pretty<span style="color:#8c8a86;font-size:11px">⌥3</span></div>
         <div style="display:flex;align-items:center;justify-content:space-between;padding:9px 12px;font-size:13px;color:#f4f1ea">Title Case<span style="color:#8c8a86;font-size:11px">⌥4</span></div>
@@ -202,135 +217,260 @@ details.faq-item p{padding:0 0 26px;margin:0;color:#cbc7bf;font-size:16px;line-h
         <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#a78bfa">shop.com/p?id=9</div>
       </div>
       <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:#161617;border-top:0.5px solid rgba(255,255,255,.07);font-size:11px;color:#6e6c69">
-        <span>On-device · No telemetry</span><span>No clipboard history</span>
+        <span data-i18n="see.foot.l">On-device · No telemetry</span><span data-i18n="see.foot.r">No clipboard history</span>
       </div>
     </div>
   </div>
 </section>
 
-<section class="feat" id="features"><div class="feat-inner"><div class="sec-label">// What it does</div><div class="grid">
-<div class="cell"><div class="demo"><div class="d-mono"><span class="strike">?utm_source=x&amp;fbclid=y</span> <span class="clean">→ clean link</span></div></div><div class="n">01</div><div><h3>Clean every<br>link you paste</h3><p>Strip <code style="font-family:'JetBrains Mono',monospace;color:var(--indigo2)">utm_*</code>, <code style="font-family:'JetBrains Mono',monospace;color:var(--indigo2)">fbclid</code>, <code style="font-family:'JetBrains Mono',monospace;color:var(--indigo2)">gclid</code> and the rest of the tracking junk out of a URL in one click, so the link you share is the link you meant &mdash; not a profile of who sent it.</p></div></div>
-<div class="cell"><div class="demo"><div class="d-row" style="justify-content:center"><span class="d-tag" style="margin:0">&lt;b&gt;HTML&lt;/b&gt;</span><span class="d-glyph" style="font-size:18px">→</span><span class="d-tag" style="margin:0;color:var(--indigo2)">**Markdown**</span></div></div><div class="n">02</div><div><h3>HTML &amp; JSON,<br>tidied instantly</h3><p>Turn copied HTML into clean Markdown, pretty-print a minified JSON blob so you can actually read it, or minify it back down for shipping. The grunt work of dev and writing, gone in a keystroke.</p></div></div>
-<div class="cell"><div class="demo"><div class="d-row" style="justify-content:center"><span class="d-tag" style="margin:0">heLLo WORLD</span><span class="d-glyph" style="font-size:18px">→</span><span class="d-tag" style="margin:0;color:var(--indigo2)">Hello World</span></div></div><div class="n">03</div><div><h3>Fix case &amp;<br>spacing, fast</h3><p>UPPERCASE, lowercase, Title Case or Sentence case &mdash; plus tidy up doubled spaces and stray whitespace, and swap curly quotes for straight ones. Perfect for headings, code, and pasting between apps that disagree on style.</p></div></div>
-<div class="cell"><div class="demo"><div class="d-list"><span class="d-li">first line</span><span class="d-li">second line</span><span class="d-li">third line</span></div></div><div class="n">04</div><div><h3>Lists &amp; slugs,<br>without the fiddling</h3><p>Turn plain lines into a bullet or numbered list, or slugify a title into a clean URL handle. Castly keeps no clipboard history and never stores your text &mdash; it transforms what you paste and gets out of the way. One-time purchase.</p></div></div>
+<section class="feat" id="features"><div class="feat-inner"><div class="sec-label" data-i18n="feat.label">// What it does</div><div class="grid">
+<div class="cell"><div class="demo"><div class="d-mono"><span class="strike">?utm_source=x&amp;fbclid=y</span> <span class="clean">→ clean link</span></div></div><div class="n">01</div><div><h3 data-i18n="feat.1.title">Clean every<br>link you paste</h3><p data-i18n="feat.1.body">Strip <code style="font-family:'JetBrains Mono',monospace;color:var(--indigo2)">utm_*</code>, <code style="font-family:'JetBrains Mono',monospace;color:var(--indigo2)">fbclid</code>, <code style="font-family:'JetBrains Mono',monospace;color:var(--indigo2)">gclid</code> and the rest of the tracking junk out of a URL in one click, so the link you share is the link you meant &mdash; not a profile of who sent it.</p></div></div>
+<div class="cell"><div class="demo"><div class="d-row" style="justify-content:center"><span class="d-tag" style="margin:0">&lt;b&gt;HTML&lt;/b&gt;</span><span class="d-glyph" style="font-size:18px">→</span><span class="d-tag" style="margin:0;color:var(--indigo2)">**Markdown**</span></div></div><div class="n">02</div><div><h3 data-i18n="feat.2.title">HTML &amp; JSON,<br>tidied instantly</h3><p data-i18n="feat.2.body">Turn copied HTML into clean Markdown, pretty-print a minified JSON blob so you can actually read it, or minify it back down for shipping. The grunt work of dev and writing, gone in a keystroke.</p></div></div>
+<div class="cell"><div class="demo"><div class="d-row" style="justify-content:center"><span class="d-tag" style="margin:0">heLLo WORLD</span><span class="d-glyph" style="font-size:18px">→</span><span class="d-tag" style="margin:0;color:var(--indigo2)">Hello World</span></div></div><div class="n">03</div><div><h3 data-i18n="feat.3.title">Fix case &amp;<br>spacing, fast</h3><p data-i18n="feat.3.body">UPPERCASE, lowercase, Title Case or Sentence case &mdash; plus tidy up doubled spaces and stray whitespace, and swap curly quotes for straight ones. Perfect for headings, code, and pasting between apps that disagree on style.</p></div></div>
+<div class="cell"><div class="demo"><div class="d-list"><span class="d-li">first line</span><span class="d-li">second line</span><span class="d-li">third line</span></div></div><div class="n">04</div><div><h3 data-i18n="feat.4.title">Lists &amp; slugs,<br>without the fiddling</h3><p data-i18n="feat.4.body">Turn plain lines into a bullet or numbered list, or slugify a title into a clean URL handle. Castly keeps no clipboard history and never stores your text &mdash; it transforms what you paste and gets out of the way. One-time purchase.</p></div></div>
 </div></div></section>
 
-<section class="tf"><div class="tf-wrap"><div class="sec-label">// All 54 transformations</div>
+<section class="tf"><div class="tf-wrap"><div class="sec-label" data-i18n="tf.label">// All 54 transformations</div>
 
-<h4 style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink);margin:0 0 18px">Clean <span style="color:var(--muted)">· 4</span></h4>
+<h4 style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink);margin:0 0 18px"><span data-i18n="tf.cat.clean">Clean</span> <span style="color:var(--muted)">· 4</span></h4>
 <div class="tf-grid">
-<div class="tf-item"><div class="tn">01</div><h5>Clean URL</h5><p>Removes <code>utm_*</code>, <code>fbclid</code>, <code>gclid</code> and 100+ other tracking parameters from a link.</p></div>
-<div class="tf-item"><div class="tn">02</div><h5>Strip formatting</h5><p>Turns rich text into plain text, dropping fonts, colours and styling.</p></div>
-<div class="tf-item"><div class="tn">03</div><h5>Remove invisible characters</h5><p>Strips zero-width characters, BOM and AI watermarks hiding in your text.</p></div>
-<div class="tf-item"><div class="tn">04</div><h5>Strip HTML → plain text</h5><p>Removes all HTML tags and leaves the readable text behind.</p></div>
+<div class="tf-item"><div class="tn">01</div><h5 data-i18n="tf.01.h">Clean URL</h5><p data-i18n="tf.01.p">Removes <code>utm_*</code>, <code>fbclid</code>, <code>gclid</code> and 100+ other tracking parameters from a link.</p></div>
+<div class="tf-item"><div class="tn">02</div><h5 data-i18n="tf.02.h">Strip formatting</h5><p data-i18n="tf.02.p">Turns rich text into plain text, dropping fonts, colours and styling.</p></div>
+<div class="tf-item"><div class="tn">03</div><h5 data-i18n="tf.03.h">Remove invisible characters</h5><p data-i18n="tf.03.p">Strips zero-width characters, BOM and AI watermarks hiding in your text.</p></div>
+<div class="tf-item"><div class="tn">04</div><h5 data-i18n="tf.04.h">Strip HTML → plain text</h5><p data-i18n="tf.04.p">Removes all HTML tags and leaves the readable text behind.</p></div>
 </div>
 
-<h4 style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink);margin:48px 0 18px">Convert <span style="color:var(--muted)">· 4</span></h4>
+<h4 style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink);margin:48px 0 18px"><span data-i18n="tf.cat.convert">Convert</span> <span style="color:var(--muted)">· 4</span></h4>
 <div class="tf-grid">
-<div class="tf-item"><div class="tn">05</div><h5>HTML → Markdown</h5><p>Converts copied HTML into clean, readable Markdown.</p></div>
-<div class="tf-item"><div class="tn">06</div><h5>Markdown → HTML</h5><p>Renders Markdown into HTML markup.</p></div>
-<div class="tf-item"><div class="tn">07</div><h5>JSON Pretty</h5><p>Pretty-prints and indents a minified JSON blob so you can read it.</p></div>
-<div class="tf-item"><div class="tn">08</div><h5>JSON Minify</h5><p>Collapses JSON to a single compact line, ready to ship.</p></div>
+<div class="tf-item"><div class="tn">05</div><h5 data-i18n="tf.05.h">HTML → Markdown</h5><p data-i18n="tf.05.p">Converts copied HTML into clean, readable Markdown.</p></div>
+<div class="tf-item"><div class="tn">06</div><h5 data-i18n="tf.06.h">Markdown → HTML</h5><p data-i18n="tf.06.p">Renders Markdown into HTML markup.</p></div>
+<div class="tf-item"><div class="tn">07</div><h5 data-i18n="tf.07.h">JSON Pretty</h5><p data-i18n="tf.07.p">Pretty-prints and indents a minified JSON blob so you can read it.</p></div>
+<div class="tf-item"><div class="tn">08</div><h5 data-i18n="tf.08.h">JSON Minify</h5><p data-i18n="tf.08.p">Collapses JSON to a single compact line, ready to ship.</p></div>
 </div>
 
-<h4 style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink);margin:48px 0 18px">Case <span style="color:var(--muted)">· 11</span></h4>
+<h4 style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink);margin:48px 0 18px"><span data-i18n="tf.cat.case">Case</span> <span style="color:var(--muted)">· 11</span></h4>
 <div class="tf-grid">
-<div class="tf-item"><div class="tn">09</div><h5>UPPERCASE</h5><p>Makes every letter upper case.</p></div>
-<div class="tf-item"><div class="tn">10</div><h5>lowercase</h5><p>Makes every letter lower case.</p></div>
-<div class="tf-item"><div class="tn">11</div><h5>Title Case</h5><p>Capitalises The First Letter Of Each Word.</p></div>
-<div class="tf-item"><div class="tn">12</div><h5>Sentence case</h5><p>Capitalises only the first word of each sentence.</p></div>
-<div class="tf-item"><div class="tn">13</div><h5>Capitalize Words</h5><p>Capitalises the first letter of every word.</p></div>
-<div class="tf-item"><div class="tn">14</div><h5>camelCase</h5><p>Joins words with the first lower and the rest capitalised.</p></div>
-<div class="tf-item"><div class="tn">15</div><h5>PascalCase</h5><p>Joins words with every word capitalised, no spaces.</p></div>
-<div class="tf-item"><div class="tn">16</div><h5>snake_case</h5><p>Lowercases words and joins them with underscores.</p></div>
-<div class="tf-item"><div class="tn">17</div><h5>kebab-case</h5><p>Lowercases words and joins them with hyphens.</p></div>
-<div class="tf-item"><div class="tn">18</div><h5>CONSTANT_CASE</h5><p>Uppercases words and joins them with underscores.</p></div>
-<div class="tf-item"><div class="tn">19</div><h5>Slugify</h5><p>Converts a title into a lowercase, hyphenated URL slug.</p></div>
+<div class="tf-item"><div class="tn">09</div><h5 data-i18n="tf.09.h">UPPERCASE</h5><p data-i18n="tf.09.p">Makes every letter upper case.</p></div>
+<div class="tf-item"><div class="tn">10</div><h5 data-i18n="tf.10.h">lowercase</h5><p data-i18n="tf.10.p">Makes every letter lower case.</p></div>
+<div class="tf-item"><div class="tn">11</div><h5 data-i18n="tf.11.h">Title Case</h5><p data-i18n="tf.11.p">Capitalises The First Letter Of Each Word.</p></div>
+<div class="tf-item"><div class="tn">12</div><h5 data-i18n="tf.12.h">Sentence case</h5><p data-i18n="tf.12.p">Capitalises only the first word of each sentence.</p></div>
+<div class="tf-item"><div class="tn">13</div><h5 data-i18n="tf.13.h">Capitalize Words</h5><p data-i18n="tf.13.p">Capitalises the first letter of every word.</p></div>
+<div class="tf-item"><div class="tn">14</div><h5 data-i18n="tf.14.h">camelCase</h5><p data-i18n="tf.14.p">Joins words with the first lower and the rest capitalised.</p></div>
+<div class="tf-item"><div class="tn">15</div><h5 data-i18n="tf.15.h">PascalCase</h5><p data-i18n="tf.15.p">Joins words with every word capitalised, no spaces.</p></div>
+<div class="tf-item"><div class="tn">16</div><h5 data-i18n="tf.16.h">snake_case</h5><p data-i18n="tf.16.p">Lowercases words and joins them with underscores.</p></div>
+<div class="tf-item"><div class="tn">17</div><h5 data-i18n="tf.17.h">kebab-case</h5><p data-i18n="tf.17.p">Lowercases words and joins them with hyphens.</p></div>
+<div class="tf-item"><div class="tn">18</div><h5 data-i18n="tf.18.h">CONSTANT_CASE</h5><p data-i18n="tf.18.p">Uppercases words and joins them with underscores.</p></div>
+<div class="tf-item"><div class="tn">19</div><h5 data-i18n="tf.19.h">Slugify</h5><p data-i18n="tf.19.p">Converts a title into a lowercase, hyphenated URL slug.</p></div>
 </div>
 
-<h4 style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink);margin:48px 0 18px">Lines <span style="color:var(--muted)">· 12</span></h4>
+<h4 style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink);margin:48px 0 18px"><span data-i18n="tf.cat.lines">Lines</span> <span style="color:var(--muted)">· 12</span></h4>
 <div class="tf-grid">
-<div class="tf-item"><div class="tn">20</div><h5>Bullet list</h5><p>Turns each line into a bulleted list item.</p></div>
-<div class="tf-item"><div class="tn">21</div><h5>Numbered list</h5><p>Turns each line into a numbered list item.</p></div>
-<div class="tf-item"><div class="tn">22</div><h5>Sort A→Z</h5><p>Sorts lines alphabetically, ascending.</p></div>
-<div class="tf-item"><div class="tn">23</div><h5>Sort Z→A</h5><p>Sorts lines alphabetically, descending.</p></div>
-<div class="tf-item"><div class="tn">24</div><h5>Reverse lines</h5><p>Flips the order of the lines top to bottom.</p></div>
-<div class="tf-item"><div class="tn">25</div><h5>Shuffle lines</h5><p>Randomises the order of the lines.</p></div>
-<div class="tf-item"><div class="tn">26</div><h5>Remove duplicate lines</h5><p>Drops repeated lines, keeping the first of each.</p></div>
-<div class="tf-item"><div class="tn">27</div><h5>Remove empty lines</h5><p>Deletes blank lines from the text.</p></div>
-<div class="tf-item"><div class="tn">28</div><h5>Trim each line</h5><p>Strips leading and trailing whitespace from every line.</p></div>
-<div class="tf-item"><div class="tn">29</div><h5>Number lines</h5><p>Prefixes each line with its line number.</p></div>
-<div class="tf-item"><div class="tn">30</div><h5>Join lines</h5><p>Merges all lines into a single line.</p></div>
-<div class="tf-item"><div class="tn">31</div><h5>Quote lines</h5><p>Prefixes each line with a Markdown quote marker.</p></div>
+<div class="tf-item"><div class="tn">20</div><h5 data-i18n="tf.20.h">Bullet list</h5><p data-i18n="tf.20.p">Turns each line into a bulleted list item.</p></div>
+<div class="tf-item"><div class="tn">21</div><h5 data-i18n="tf.21.h">Numbered list</h5><p data-i18n="tf.21.p">Turns each line into a numbered list item.</p></div>
+<div class="tf-item"><div class="tn">22</div><h5 data-i18n="tf.22.h">Sort A→Z</h5><p data-i18n="tf.22.p">Sorts lines alphabetically, ascending.</p></div>
+<div class="tf-item"><div class="tn">23</div><h5 data-i18n="tf.23.h">Sort Z→A</h5><p data-i18n="tf.23.p">Sorts lines alphabetically, descending.</p></div>
+<div class="tf-item"><div class="tn">24</div><h5 data-i18n="tf.24.h">Reverse lines</h5><p data-i18n="tf.24.p">Flips the order of the lines top to bottom.</p></div>
+<div class="tf-item"><div class="tn">25</div><h5 data-i18n="tf.25.h">Shuffle lines</h5><p data-i18n="tf.25.p">Randomises the order of the lines.</p></div>
+<div class="tf-item"><div class="tn">26</div><h5 data-i18n="tf.26.h">Remove duplicate lines</h5><p data-i18n="tf.26.p">Drops repeated lines, keeping the first of each.</p></div>
+<div class="tf-item"><div class="tn">27</div><h5 data-i18n="tf.27.h">Remove empty lines</h5><p data-i18n="tf.27.p">Deletes blank lines from the text.</p></div>
+<div class="tf-item"><div class="tn">28</div><h5 data-i18n="tf.28.h">Trim each line</h5><p data-i18n="tf.28.p">Strips leading and trailing whitespace from every line.</p></div>
+<div class="tf-item"><div class="tn">29</div><h5 data-i18n="tf.29.h">Number lines</h5><p data-i18n="tf.29.p">Prefixes each line with its line number.</p></div>
+<div class="tf-item"><div class="tn">30</div><h5 data-i18n="tf.30.h">Join lines</h5><p data-i18n="tf.30.p">Merges all lines into a single line.</p></div>
+<div class="tf-item"><div class="tn">31</div><h5 data-i18n="tf.31.h">Quote lines</h5><p data-i18n="tf.31.p">Prefixes each line with a Markdown quote marker.</p></div>
 </div>
 
-<h4 style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink);margin:48px 0 18px">Spacing <span style="color:var(--muted)">· 8</span></h4>
+<h4 style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink);margin:48px 0 18px"><span data-i18n="tf.cat.spacing">Spacing</span> <span style="color:var(--muted)">· 8</span></h4>
 <div class="tf-grid">
-<div class="tf-item"><div class="tn">32</div><h5>Straight quotes</h5><p>Replaces curly quotes with plain straight ones.</p></div>
-<div class="tf-item"><div class="tn">33</div><h5>Smart quotes</h5><p>Replaces straight quotes with typographic curly ones.</p></div>
-<div class="tf-item"><div class="tn">34</div><h5>Tidy spaces</h5><p>Collapses doubled spaces and trims stray whitespace.</p></div>
-<div class="tf-item"><div class="tn">35</div><h5>Remove all spaces</h5><p>Deletes every space character from the text.</p></div>
-<div class="tf-item"><div class="tn">36</div><h5>Tabs → spaces</h5><p>Converts tab characters into spaces.</p></div>
-<div class="tf-item"><div class="tn">37</div><h5>Spaces → tabs</h5><p>Converts runs of spaces into tab characters.</p></div>
-<div class="tf-item"><div class="tn">38</div><h5>Normalize dashes &amp; ellipsis</h5><p>Standardises em/en dashes and ellipsis characters.</p></div>
-<div class="tf-item"><div class="tn">39</div><h5>Reverse characters</h5><p>Reverses the order of every character in the text.</p></div>
+<div class="tf-item"><div class="tn">32</div><h5 data-i18n="tf.32.h">Straight quotes</h5><p data-i18n="tf.32.p">Replaces curly quotes with plain straight ones.</p></div>
+<div class="tf-item"><div class="tn">33</div><h5 data-i18n="tf.33.h">Smart quotes</h5><p data-i18n="tf.33.p">Replaces straight quotes with typographic curly ones.</p></div>
+<div class="tf-item"><div class="tn">34</div><h5 data-i18n="tf.34.h">Tidy spaces</h5><p data-i18n="tf.34.p">Collapses doubled spaces and trims stray whitespace.</p></div>
+<div class="tf-item"><div class="tn">35</div><h5 data-i18n="tf.35.h">Remove all spaces</h5><p data-i18n="tf.35.p">Deletes every space character from the text.</p></div>
+<div class="tf-item"><div class="tn">36</div><h5 data-i18n="tf.36.h">Tabs → spaces</h5><p data-i18n="tf.36.p">Converts tab characters into spaces.</p></div>
+<div class="tf-item"><div class="tn">37</div><h5 data-i18n="tf.37.h">Spaces → tabs</h5><p data-i18n="tf.37.p">Converts runs of spaces into tab characters.</p></div>
+<div class="tf-item"><div class="tn">38</div><h5 data-i18n="tf.38.h">Normalize dashes &amp; ellipsis</h5><p data-i18n="tf.38.p">Standardises em/en dashes and ellipsis characters.</p></div>
+<div class="tf-item"><div class="tn">39</div><h5 data-i18n="tf.39.h">Reverse characters</h5><p data-i18n="tf.39.p">Reverses the order of every character in the text.</p></div>
 </div>
 
-<h4 style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink);margin:48px 0 18px">Encode/Dev <span style="color:var(--muted)">· 15</span></h4>
+<h4 style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink);margin:48px 0 18px"><span data-i18n="tf.cat.encode">Encode/Dev</span> <span style="color:var(--muted)">· 15</span></h4>
 <div class="tf-grid">
-<div class="tf-item"><div class="tn">40</div><h5>Base64 encode</h5><p>Encodes the text as Base64.</p></div>
-<div class="tf-item"><div class="tn">41</div><h5>Base64 decode</h5><p>Decodes Base64 back into plain text.</p></div>
-<div class="tf-item"><div class="tn">42</div><h5>URL encode</h5><p>Percent-encodes the text for use in a URL.</p></div>
-<div class="tf-item"><div class="tn">43</div><h5>URL decode</h5><p>Decodes percent-encoded URL text.</p></div>
-<div class="tf-item"><div class="tn">44</div><h5>HTML entities encode</h5><p>Escapes characters into HTML entities.</p></div>
-<div class="tf-item"><div class="tn">45</div><h5>HTML entities decode</h5><p>Decodes HTML entities back into characters.</p></div>
-<div class="tf-item"><div class="tn">46</div><h5>Backslash escape</h5><p>Escapes special characters with backslashes.</p></div>
-<div class="tf-item"><div class="tn">47</div><h5>Backslash unescape</h5><p>Resolves backslash escape sequences.</p></div>
-<div class="tf-item"><div class="tn">48</div><h5>Hex encode</h5><p>Encodes the text as hexadecimal.</p></div>
-<div class="tf-item"><div class="tn">49</div><h5>Hex decode</h5><p>Decodes hexadecimal back into plain text.</p></div>
-<div class="tf-item"><div class="tn">50</div><h5>MD5</h5><p>Computes the MD5 hash of the text.</p></div>
-<div class="tf-item"><div class="tn">51</div><h5>SHA-1</h5><p>Computes the SHA-1 hash of the text.</p></div>
-<div class="tf-item"><div class="tn">52</div><h5>SHA-256</h5><p>Computes the SHA-256 hash of the text.</p></div>
-<div class="tf-item"><div class="tn">53</div><h5>JWT decode</h5><p>Decodes a JWT into its readable header and payload.</p></div>
-<div class="tf-item"><div class="tn">54</div><h5>ROT13</h5><p>Applies the classic ROT13 letter rotation.</p></div>
+<div class="tf-item"><div class="tn">40</div><h5 data-i18n="tf.40.h">Base64 encode</h5><p data-i18n="tf.40.p">Encodes the text as Base64.</p></div>
+<div class="tf-item"><div class="tn">41</div><h5 data-i18n="tf.41.h">Base64 decode</h5><p data-i18n="tf.41.p">Decodes Base64 back into plain text.</p></div>
+<div class="tf-item"><div class="tn">42</div><h5 data-i18n="tf.42.h">URL encode</h5><p data-i18n="tf.42.p">Percent-encodes the text for use in a URL.</p></div>
+<div class="tf-item"><div class="tn">43</div><h5 data-i18n="tf.43.h">URL decode</h5><p data-i18n="tf.43.p">Decodes percent-encoded URL text.</p></div>
+<div class="tf-item"><div class="tn">44</div><h5 data-i18n="tf.44.h">HTML entities encode</h5><p data-i18n="tf.44.p">Escapes characters into HTML entities.</p></div>
+<div class="tf-item"><div class="tn">45</div><h5 data-i18n="tf.45.h">HTML entities decode</h5><p data-i18n="tf.45.p">Decodes HTML entities back into characters.</p></div>
+<div class="tf-item"><div class="tn">46</div><h5 data-i18n="tf.46.h">Backslash escape</h5><p data-i18n="tf.46.p">Escapes special characters with backslashes.</p></div>
+<div class="tf-item"><div class="tn">47</div><h5 data-i18n="tf.47.h">Backslash unescape</h5><p data-i18n="tf.47.p">Resolves backslash escape sequences.</p></div>
+<div class="tf-item"><div class="tn">48</div><h5 data-i18n="tf.48.h">Hex encode</h5><p data-i18n="tf.48.p">Encodes the text as hexadecimal.</p></div>
+<div class="tf-item"><div class="tn">49</div><h5 data-i18n="tf.49.h">Hex decode</h5><p data-i18n="tf.49.p">Decodes hexadecimal back into plain text.</p></div>
+<div class="tf-item"><div class="tn">50</div><h5 data-i18n="tf.50.h">MD5</h5><p data-i18n="tf.50.p">Computes the MD5 hash of the text.</p></div>
+<div class="tf-item"><div class="tn">51</div><h5 data-i18n="tf.51.h">SHA-1</h5><p data-i18n="tf.51.p">Computes the SHA-1 hash of the text.</p></div>
+<div class="tf-item"><div class="tn">52</div><h5 data-i18n="tf.52.h">SHA-256</h5><p data-i18n="tf.52.p">Computes the SHA-256 hash of the text.</p></div>
+<div class="tf-item"><div class="tn">53</div><h5 data-i18n="tf.53.h">JWT decode</h5><p data-i18n="tf.53.p">Decodes a JWT into its readable header and payload.</p></div>
+<div class="tf-item"><div class="tn">54</div><h5 data-i18n="tf.54.h">ROT13</h5><p data-i18n="tf.54.p">Applies the classic ROT13 letter rotation.</p></div>
 </div>
 
 </div></section>
 
-<section class="cmp"><div class="cmp-wrap"><div class="sec-label">// How it compares</div>
+<section class="cmp"><div class="cmp-wrap"><div class="sec-label" data-i18n="cmp.label">// How it compares</div>
 <table><thead><tr><th></th><th class="us">Castly</th><th>NanoClip</th><th>PastePlain</th><th>Pure Paste</th><th>TextSoap</th><th>PopClip</th><th>Paste &amp; Match Style</th></tr></thead><tbody>
-<tr><td>Full set of text transforms (54)</td><td class="us yes">54</td><td><span class="no">~ 30</span></td><td><span class="no">~ basic</span></td><td><span class="no">&#10007;</span></td><td class="yes">&#10003;</td><td><span class="no">~ via extensions</span></td><td><span class="no">&#10007;</span></td></tr>
-<tr><td>Clean tracking from URLs</td><td class="us yes">&#10003;</td><td><span class="no">~ partial</span></td><td><span class="no">&#10007;</span></td><td class="yes">&#10003;</td><td class="yes">&#10003;</td><td><span class="no">~ via extensions</span></td><td><span class="no">&#10007;</span></td></tr>
-<tr><td>HTML → Markdown · JSON pretty/minify</td><td class="us yes">&#10003;</td><td><span class="no">&#10007;</span></td><td><span class="no">&#10007;</span></td><td><span class="no">&#10007;</span></td><td class="yes">&#10003;</td><td><span class="no">~ via extensions</span></td><td><span class="no">&#10007;</span></td></tr>
-<tr><td>Not a clipboard manager (no history kept)</td><td class="us yes">&#10003;</td><td><span class="no">&#10007; stores history</span></td><td class="yes">&#10003;</td><td class="yes">&#10003;</td><td class="yes">&#10003;</td><td class="yes">&#10003;</td><td class="yes">&#10003;</td></tr>
-<tr><td>Runs on-device &mdash; nothing leaves your Mac</td><td class="us yes">&#10003;</td><td class="yes">&#10003;</td><td class="yes">&#10003;</td><td class="yes">&#10003;</td><td class="yes">&#10003;</td><td class="yes">&#10003;</td><td class="yes">&#10003;</td></tr>
-<tr><td>One-time price</td><td class="us yes">$9.99</td><td class="yes">$9.99</td><td class="yes">$3.99</td><td class="yes">free</td><td><span class="no">$50</span></td><td class="yes">$17.49</td><td class="yes">free</td></tr>
+<tr><td data-i18n="cmp.row.fullset">Full set of text transforms (54)</td><td class="us yes">54</td><td><span class="no">~ 30</span></td><td><span class="no">~ basic</span></td><td><span class="no">&#10007;</span></td><td class="yes">&#10003;</td><td><span class="no">~ via extensions</span></td><td><span class="no">&#10007;</span></td></tr>
+<tr><td data-i18n="cmp.row.cleanurl">Clean tracking from URLs</td><td class="us yes">&#10003;</td><td><span class="no">~ partial</span></td><td><span class="no">&#10007;</span></td><td class="yes">&#10003;</td><td class="yes">&#10003;</td><td><span class="no">~ via extensions</span></td><td><span class="no">&#10007;</span></td></tr>
+<tr><td data-i18n="cmp.row.convert">HTML → Markdown · JSON pretty/minify</td><td class="us yes">&#10003;</td><td><span class="no">&#10007;</span></td><td><span class="no">&#10007;</span></td><td><span class="no">&#10007;</span></td><td class="yes">&#10003;</td><td><span class="no">~ via extensions</span></td><td><span class="no">&#10007;</span></td></tr>
+<tr><td data-i18n="cmp.row.nohistory">Not a clipboard manager (no history kept)</td><td class="us yes">&#10003;</td><td><span class="no">&#10007; stores history</span></td><td class="yes">&#10003;</td><td class="yes">&#10003;</td><td class="yes">&#10003;</td><td class="yes">&#10003;</td><td class="yes">&#10003;</td></tr>
+<tr><td data-i18n="cmp.row.ondevice">Runs on-device &mdash; nothing leaves your Mac</td><td class="us yes">&#10003;</td><td class="yes">&#10003;</td><td class="yes">&#10003;</td><td class="yes">&#10003;</td><td class="yes">&#10003;</td><td class="yes">&#10003;</td><td class="yes">&#10003;</td></tr>
+<tr><td data-i18n="cmp.row.price">One-time price</td><td class="us yes">$9.99</td><td class="yes">$9.99</td><td class="yes">$3.99</td><td class="yes">free</td><td><span class="no">$50</span></td><td class="yes">$17.49</td><td class="yes">free</td></tr>
 </tbody></table>
-<p style="margin-top:22px;color:#8c8a86;font-size:13px;line-height:1.6">Castly ships <b style="color:var(--indigo2)">54 transformations</b> &mdash; a wider catalogue than NanoClip&rsquo;s ~30, and far beyond Pure Paste or the native &ldquo;Paste &amp; Match Style&rdquo;, which only strip formatting. PopClip is an extensions platform rather than a transformer out of the box, and TextSoap is powerful but pro-priced at $50. Castly does one thing well: a focused, complete set of paste transformations &mdash; 100% on-device, no accounts, no cloud AI, for a one-time $9.99, without becoming a clipboard manager.</p>
+<p style="margin-top:22px;color:#8c8a86;font-size:13px;line-height:1.6" data-i18n="cmp.note">Castly ships <b style="color:var(--indigo2)">54 transformations</b> &mdash; a wider catalogue than NanoClip&rsquo;s ~30, and far beyond Pure Paste or the native &ldquo;Paste &amp; Match Style&rdquo;, which only strip formatting. PopClip is an extensions platform rather than a transformer out of the box, and TextSoap is powerful but pro-priced at $50. Castly does one thing well: a focused, complete set of paste transformations &mdash; 100% on-device, no accounts, no cloud AI, for a one-time $9.99, without becoming a clipboard manager.</p>
 </div></section>
 <section class="price" id="buy">
-  <div class="sec-label" style="text-align:center">// One price. Forever.</div>
+  <div class="sec-label" style="text-align:center" data-i18n="price.label">// One price. Forever.</div>
   <div class="big">CASTLY <span class="amt">$9.99</span></div>
-  <div class="terms">One-time purchase · 14-day trial · Works on every Mac you own</div>
-  <button class="btn primary" onclick="openCheckout()">Buy Castly →</button>
+  <div class="terms" data-i18n="price.terms">One-time purchase · 14-day trial · Works on every Mac you own</div>
+  <button class="btn primary" onclick="openCheckout()" data-i18n="price.buy">Buy Castly →</button>
 </section>
 
-<section class="faq"><div class="faq-wrap"><div class="sec-label">// Questions</div>
-<details class="faq-item"><summary>Does anything leave my Mac?</summary><p>No. Every transformation runs entirely on your Mac — your text is never uploaded anywhere. The only network connections Castly ever makes are an update check and a one-off licence validation, never your clipboard content. You can confirm this yourself with a firewall tool like Little Snitch or LuLu.</p></details>
-<details class="faq-item"><summary>Is Castly a clipboard manager?</summary><p>No. Castly is a transformer, not a clipboard manager. It doesn't keep a searchable history of everything you copy. You copy text, pick a transformation, and the cleaned-up result lands back on your clipboard ready to paste — nothing is stored or logged.</p></details>
-<details class="faq-item"><summary>Does it preserve rich text, images or files?</summary><p>Castly works on text. Each transformation takes the text on your clipboard and produces transformed plain text — for example, turning copied HTML into Markdown, or stripping a URL's tracking parameters. It doesn't carry over rich-text styling, images, or files; the result is clean transformed text you can paste anywhere.</p></details>
-<details class="faq-item"><summary>What transformations are included?</summary><p>Fifty-four, grouped into six categories. Clean (clean URLs, strip formatting, remove invisible characters, strip HTML), Convert (HTML ↔ Markdown, JSON pretty/minify), Case (UPPER, lower, Title, Sentence, camelCase, PascalCase, snake_case, kebab-case, CONSTANT_CASE, Capitalize Words, Slugify), Lines (sort, dedupe, reverse, shuffle, number, bullet/numbered lists, join, quote and more), Spacing (smart/straight quotes, tidy spaces, tabs↔spaces, normalize dashes, reverse characters) and Encode/Dev (Base64, URL, HTML entities, backslash, hex, MD5, SHA-1, SHA-256, JWT decode, ROT13). One focused, complete toolkit — no bloat.</p></details>
-<details class="faq-item"><summary>How many Macs can I use it on?</summary><p>All the Macs you personally own, with a single licence. One purchase covers your whole setup — no per-seat counting.</p></details>
-<details class="faq-item"><summary>Is there a hotkey?</summary><p>You drive Castly from the menu bar today — click the icon, pick a transformation, paste. Per-transformation global hotkeys are coming in a future free update for your version.</p></details>
-<details class="faq-item"><summary>App Store or direct?</summary><p>Castly is sold directly and distributed as a Developer ID app, notarized by Apple. That keeps it lightweight and lets it work with your clipboard cleanly, while still being Gatekeeper-checked and safe to run.</p></details>
-<details class="faq-item"><summary>Can I get a refund?</summary><p>Absolutely — a 14-day money-back guarantee, no questions asked. Payments are handled by Paddle; just reply to your receipt and we'll sort it out.</p></details>
+<section class="faq"><div class="faq-wrap"><div class="sec-label" data-i18n="faq.label">// Questions</div>
+<details class="faq-item"><summary data-i18n="faq.1.q">Does anything leave my Mac?</summary><p data-i18n="faq.1.a">No. Every transformation runs entirely on your Mac — your text is never uploaded anywhere. The only network connections Castly ever makes are an update check and a one-off licence validation, never your clipboard content. You can confirm this yourself with a firewall tool like Little Snitch or LuLu.</p></details>
+<details class="faq-item"><summary data-i18n="faq.2.q">Is Castly a clipboard manager?</summary><p data-i18n="faq.2.a">No. Castly is a transformer, not a clipboard manager. It doesn't keep a searchable history of everything you copy. You copy text, pick a transformation, and the cleaned-up result lands back on your clipboard ready to paste — nothing is stored or logged.</p></details>
+<details class="faq-item"><summary data-i18n="faq.3.q">Does it preserve rich text, images or files?</summary><p data-i18n="faq.3.a">Castly works on text. Each transformation takes the text on your clipboard and produces transformed plain text — for example, turning copied HTML into Markdown, or stripping a URL's tracking parameters. It doesn't carry over rich-text styling, images, or files; the result is clean transformed text you can paste anywhere.</p></details>
+<details class="faq-item"><summary data-i18n="faq.4.q">What transformations are included?</summary><p data-i18n="faq.4.a">Fifty-four, grouped into six categories. Clean (clean URLs, strip formatting, remove invisible characters, strip HTML), Convert (HTML ↔ Markdown, JSON pretty/minify), Case (UPPER, lower, Title, Sentence, camelCase, PascalCase, snake_case, kebab-case, CONSTANT_CASE, Capitalize Words, Slugify), Lines (sort, dedupe, reverse, shuffle, number, bullet/numbered lists, join, quote and more), Spacing (smart/straight quotes, tidy spaces, tabs↔spaces, normalize dashes, reverse characters) and Encode/Dev (Base64, URL, HTML entities, backslash, hex, MD5, SHA-1, SHA-256, JWT decode, ROT13). One focused, complete toolkit — no bloat.</p></details>
+<details class="faq-item"><summary data-i18n="faq.5.q">How many Macs can I use it on?</summary><p data-i18n="faq.5.a">All the Macs you personally own, with a single licence. One purchase covers your whole setup — no per-seat counting.</p></details>
+<details class="faq-item"><summary data-i18n="faq.6.q">Is there a hotkey?</summary><p data-i18n="faq.6.a">You drive Castly from the menu bar today — click the icon, pick a transformation, paste. Per-transformation global hotkeys are coming in a future free update for your version.</p></details>
+<details class="faq-item"><summary data-i18n="faq.7.q">App Store or direct?</summary><p data-i18n="faq.7.a">Castly is sold directly and distributed as a Developer ID app, notarized by Apple. That keeps it lightweight and lets it work with your clipboard cleanly, while still being Gatekeeper-checked and safe to run.</p></details>
+<details class="faq-item"><summary data-i18n="faq.8.q">Can I get a refund?</summary><p data-i18n="faq.8.a">Absolutely — a 14-day money-back guarantee, no questions asked. Payments are handled by Paddle; just reply to your receipt and we'll sort it out.</p></details>
 </div></section>
-<section class="more" style="padding:100px 0;background:rgba(10,10,11,.95);border-top:1px solid var(--line);overflow:hidden"><div style="max-width:1000px;margin:0 auto 40px;padding:0 56px"><div class="sec-label" style="margin-bottom:0">// More from Perfect Paradox</div></div><style>@keyframes ppmarq{from{transform:translateX(0)}to{transform:translateX(-50%)}}.ppcar:hover .pptrack{animation-play-state:paused}</style><div class="ppcar" style="width:100%;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)"><div class="pptrack" style="display:flex;gap:16px;width:max-content;animation:ppmarq 55s linear infinite"><a href="https://curtain.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/curtain.png" alt="Curtain" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Curtain</div><div style="font-size:12px;color:var(--muted);text-align:center">Auto do-not-disturb on share</div></a><a href="https://notebound.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/notebound.png" alt="Notebound" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Notebound</div><div style="font-size:12px;color:var(--muted);text-align:center">Markdown to Apple Notes</div></a><a href="https://everyfile.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/everyfile.png" alt="Everyfile" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Everyfile</div><div style="font-size:12px;color:var(--muted);text-align:center">Instant file search</div></a><a href="https://screenshelf.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/screenshelf.png" alt="Screenshelf" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Screenshelf</div><div style="font-size:12px;color:var(--muted);text-align:center">Search inside screenshots</div></a><a href="https://evergreen.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/evergreen.png" alt="Evergreen" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Evergreen</div><div style="font-size:12px;color:var(--muted);text-align:center">Every app up to date</div></a><a href="https://slimr.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/slimr.png" alt="Slimr" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Slimr</div><div style="font-size:12px;color:var(--muted);text-align:center">Compress, OCR & PDF tools</div></a><a href="https://lightcap.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/lightcap.png" alt="Lightcap" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Lightcap</div><div style="font-size:12px;color:var(--muted);text-align:center">10-second screen GIFs</div></a><a href="https://scrubd.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/scrubd.png" alt="Scrubd" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Scrubd</div><div style="font-size:12px;color:var(--muted);text-align:center">Clean metadata before you share</div></a><a href="https://curtain.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/curtain.png" alt="Curtain" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Curtain</div><div style="font-size:12px;color:var(--muted);text-align:center">Auto do-not-disturb on share</div></a><a href="https://notebound.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/notebound.png" alt="Notebound" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Notebound</div><div style="font-size:12px;color:var(--muted);text-align:center">Markdown to Apple Notes</div></a><a href="https://everyfile.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/everyfile.png" alt="Everyfile" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Everyfile</div><div style="font-size:12px;color:var(--muted);text-align:center">Instant file search</div></a><a href="https://screenshelf.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/screenshelf.png" alt="Screenshelf" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Screenshelf</div><div style="font-size:12px;color:var(--muted);text-align:center">Search inside screenshots</div></a><a href="https://evergreen.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/evergreen.png" alt="Evergreen" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Evergreen</div><div style="font-size:12px;color:var(--muted);text-align:center">Every app up to date</div></a><a href="https://slimr.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/slimr.png" alt="Slimr" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Slimr</div><div style="font-size:12px;color:var(--muted);text-align:center">Compress, OCR & PDF tools</div></a><a href="https://lightcap.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/lightcap.png" alt="Lightcap" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Lightcap</div><div style="font-size:12px;color:var(--muted);text-align:center">10-second screen GIFs</div></a><a href="https://scrubd.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/scrubd.png" alt="Scrubd" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Scrubd</div><div style="font-size:12px;color:var(--muted);text-align:center">Clean metadata before you share</div></a></div></div></section>
+<section class="more" style="padding:100px 0;background:rgba(10,10,11,.95);border-top:1px solid var(--line);overflow:hidden"><div style="max-width:1000px;margin:0 auto 40px;padding:0 56px"><div class="sec-label" style="margin-bottom:0" data-i18n="more.label">// More from Perfect Paradox</div></div><style>@keyframes ppmarq{from{transform:translateX(0)}to{transform:translateX(-50%)}}.ppcar:hover .pptrack{animation-play-state:paused}</style><div class="ppcar" style="width:100%;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)"><div class="pptrack" style="display:flex;gap:16px;width:max-content;animation:ppmarq 55s linear infinite"><a href="https://curtain.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/curtain.png" alt="Curtain" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Curtain</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.curtain">Auto do-not-disturb on share</div></a><a href="https://notebound.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/notebound.png" alt="Notebound" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Notebound</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.notebound">Markdown to Apple Notes</div></a><a href="https://everyfile.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/everyfile.png" alt="Everyfile" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Everyfile</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.everyfile">Instant file search</div></a><a href="https://screenshelf.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/screenshelf.png" alt="Screenshelf" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Screenshelf</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.screenshelf">Search inside screenshots</div></a><a href="https://evergreen.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/evergreen.png" alt="Evergreen" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Evergreen</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.evergreen">Every app up to date</div></a><a href="https://slimr.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/slimr.png" alt="Slimr" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Slimr</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.slimr">Compress, OCR & PDF tools</div></a><a href="https://lightcap.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/lightcap.png" alt="Lightcap" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Lightcap</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.lightcap">10-second screen GIFs</div></a><a href="https://scrubd.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/scrubd.png" alt="Scrubd" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Scrubd</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.scrubd">Clean metadata before you share</div></a><a href="https://curtain.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/curtain.png" alt="Curtain" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Curtain</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.curtain">Auto do-not-disturb on share</div></a><a href="https://notebound.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/notebound.png" alt="Notebound" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Notebound</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.notebound">Markdown to Apple Notes</div></a><a href="https://everyfile.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/everyfile.png" alt="Everyfile" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Everyfile</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.everyfile">Instant file search</div></a><a href="https://screenshelf.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/screenshelf.png" alt="Screenshelf" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Screenshelf</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.screenshelf">Search inside screenshots</div></a><a href="https://evergreen.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/evergreen.png" alt="Evergreen" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Evergreen</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.evergreen">Every app up to date</div></a><a href="https://slimr.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/slimr.png" alt="Slimr" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Slimr</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.slimr">Compress, OCR & PDF tools</div></a><a href="https://lightcap.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/lightcap.png" alt="Lightcap" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Lightcap</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.lightcap">10-second screen GIFs</div></a><a href="https://scrubd.perfectparadox.co.uk" style="flex:0 0 210px;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:28px 16px;border:1px solid var(--line);transition:.18s" onmouseover="this.style.background='rgba(255,255,255,.04)'" onmouseout="this.style.background='transparent'"><img src="icons/scrubd.png" alt="Scrubd" width="72" height="72" style="border-radius:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink)">Scrubd</div><div style="font-size:12px;color:var(--muted);text-align:center" data-i18n="more.scrubd">Clean metadata before you share</div></a></div></div></section>
 <footer>
-  <div>© 2026 Perfect Paradox Ltd · NI739317</div>
-  <div><a href="/legal/privacy.html">Privacy</a> · <a href="/legal/terms.html">Terms</a> · <a href="/legal/refund.html">Refund</a> · <a href="/legal/eula.html">EULA</a> · <a href="mailto:info@perfectparadox.co.uk">info@perfectparadox.co.uk</a></div>
+  <div data-i18n="footer.copy">© 2026 Perfect Paradox Ltd · NI739317</div>
+  <div><a href="/legal/privacy.html" data-i18n="footer.privacy">Privacy</a> · <a href="/legal/terms.html" data-i18n="footer.terms">Terms</a> · <a href="/legal/refund.html" data-i18n="footer.refund">Refund</a> · <a href="/legal/eula.html" data-i18n="footer.eula">EULA</a> · <a href="mailto:info@perfectparadox.co.uk">info@perfectparadox.co.uk</a></div>
+  <div class="i18n-picker">
+    <label for="langSelect" class="i18n-globe" aria-hidden="true">&#127760;</label>
+    <select id="langSelect" aria-label="Language / Idioma"></select>
+  </div>
 </footer>
 </div>
+
+<!-- i18n: motor multiidioma client-side (NO toca Paddle ni precios). Patrón reutilizable. -->
+<script src="translations.js"></script>
+<script>
+(function () {
+  var I18N = window.I18N || {};
+  var LANGS = I18N.__langs || { en: "English" };
+  var SUPPORTED = Object.keys(LANGS);
+  var DEFAULT = "en";
+  var STORE_KEY = "castly_lang";
+
+  function normalize(code) {
+    if (!code) return null;
+    code = code.trim();
+    if (SUPPORTED.indexOf(code) !== -1) return code;          // match exacto (incl. zh-Hans)
+    var lower = code.toLowerCase();
+    // chino → zh-Hans (simplificado) por defecto
+    if (lower.indexOf("zh") === 0) return SUPPORTED.indexOf("zh-Hans") !== -1 ? "zh-Hans" : null;
+    var base = lower.split("-")[0];                            // "es-419" → "es"
+    for (var i = 0; i < SUPPORTED.length; i++) {
+      if (SUPPORTED[i].toLowerCase() === base || SUPPORTED[i].toLowerCase().split("-")[0] === base) {
+        return SUPPORTED[i];
+      }
+    }
+    return null;
+  }
+
+  function detect() {
+    try {
+      var qs = new URLSearchParams(window.location.search).get("lang");
+      var fromUrl = normalize(qs);
+      if (fromUrl) return fromUrl;
+    } catch (e) {}
+    try {
+      var saved = normalize(localStorage.getItem(STORE_KEY));
+      if (saved) return saved;
+    } catch (e) {}
+    var navs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language];
+    for (var i = 0; i < navs.length; i++) {
+      var n = normalize(navs[i]);
+      if (n) return n;
+    }
+    return DEFAULT;
+  }
+
+  function apply(lang) {
+    var dict = I18N[lang] || I18N[DEFAULT] || {};
+    var fallback = I18N[DEFAULT] || {};
+    function val(key) { return (dict[key] != null) ? dict[key] : fallback[key]; }
+
+    // 1) contenido de texto (permite HTML inline: <br>, <code>, <span>, →, etc.)
+    var nodes = document.querySelectorAll("[data-i18n]");
+    for (var i = 0; i < nodes.length; i++) {
+      var k = nodes[i].getAttribute("data-i18n");
+      var v = val(k);
+      if (v != null) nodes[i].innerHTML = v;
+    }
+    // 2) atributos (content/placeholder/aria-...) → data-i18n-attr="attr:clave[,attr2:clave2]"
+    var attrNodes = document.querySelectorAll("[data-i18n-attr]");
+    for (var j = 0; j < attrNodes.length; j++) {
+      var spec = attrNodes[j].getAttribute("data-i18n-attr");
+      var pairs = spec.split(",");
+      for (var p = 0; p < pairs.length; p++) {
+        var parts = pairs[p].split(":");
+        if (parts.length === 2) {
+          var av = val(parts[1].trim());
+          if (av != null) attrNodes[j].setAttribute(parts[0].trim(), av.replace(/&amp;/g, "&"));
+        }
+      }
+    }
+    // 3) <html lang>
+    document.documentElement.setAttribute("lang", lang);
+  }
+
+  function persist(lang) {
+    try { localStorage.setItem(STORE_KEY, lang); } catch (e) {}
+  }
+
+  function syncUrl(lang) {
+    try {
+      var url = new URL(window.location.href);
+      url.searchParams.set("lang", lang);
+      history.replaceState(null, "", url.toString());
+    } catch (e) {}
+  }
+
+  function buildSelector(current) {
+    var sel = document.getElementById("langSelect");
+    if (!sel) return;
+    sel.innerHTML = "";
+    for (var i = 0; i < SUPPORTED.length; i++) {
+      var code = SUPPORTED[i];
+      var opt = document.createElement("option");
+      opt.value = code;
+      opt.textContent = LANGS[code];
+      if (code === current) opt.selected = true;
+      sel.appendChild(opt);
+    }
+    sel.addEventListener("change", function () {
+      var lang = sel.value;
+      apply(lang);
+      persist(lang);
+      syncUrl(lang);
+    });
+  }
+
+  function init() {
+    var lang = detect();
+    apply(lang);
+    persist(lang);
+    syncUrl(lang);
+    buildSelector(lang);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
+})();
+</script>
 
 <!-- PADDLE: client token + price_id de Castly ($9.99) puestos. Checkout activo. -->
 <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
