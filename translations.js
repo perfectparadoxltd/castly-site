@@ -25,6 +25,28 @@ window.I18N = {
 
   /* ===================================================================== */
   en: {
+    /* idiomas + feedback (v0.2.0) */
+    "hero.langs": "8 languages",
+    "marquee.5": "8 LANGUAGES",
+    "langs.label": "// Speaks your language",
+    "langs.body": "Castly's whole interface is localized into 8 languages — it follows your Mac and speaks your language out of the box. No setup, nothing to switch on.",
+    "fb.label": "// Feedback",
+    "fb.title": "Help shape<br>Castly",
+    "fb.lead": "Found a bug, or wish it did one more thing? Tell us — every message goes straight to the people who build Castly. No account, no tracking.",
+    "fb.type.idea": "Idea",
+    "fb.type.bug": "Bug",
+    "fb.type.praise": "Praise",
+    "fb.type.other": "Other",
+    "fb.msg.label": "Your message",
+    "fb.msg.ph": "What's on your mind?",
+    "fb.email.label": "Email (optional — so we can reply)",
+    "fb.email.ph": "you@example.com",
+    "fb.send": "Send feedback →",
+    "fb.note": "We read everything. Honest feedback shapes the next update.",
+    "fb.result.ok": "Thank you — your feedback is on its way to the team.",
+    "fb.result.err": "Could not send right now. You can email us at ",
+    "fb.result.empty": "Please write a short message first.",
+    "fb.sending": "Sending…",
     "meta.title": "Castly — Paste it the way you meant it, on your Mac",
     "meta.description": "A menu-bar utility with 54 text transformations applied as you paste — clean URLs, HTML to Markdown, JSON pretty/minify, case changes, lists, encode/dev tools and more. 100% on-device. One-time $9.99, zero telemetry. macOS 14+.",
 
@@ -236,6 +258,28 @@ window.I18N = {
 
   /* ===================================================================== ES */
   es: {
+    /* idiomas + feedback (v0.2.0) */
+    "hero.langs": "8 idiomas",
+    "marquee.5": "8 IDIOMAS",
+    "langs.label": "// Habla tu idioma",
+    "langs.body": "Toda la interfaz de Castly está traducida a 8 idiomas: sigue el idioma de tu Mac y habla el tuyo desde el primer momento. Sin configurar nada.",
+    "fb.label": "// Tu opinión",
+    "fb.title": "Ayuda a mejorar<br>Castly",
+    "fb.lead": "¿Has encontrado un fallo o te gustaría que hiciera algo más? Cuéntanoslo: cada mensaje llega directo a quienes desarrollan Castly. Sin cuenta y sin rastreo.",
+    "fb.type.idea": "Idea",
+    "fb.type.bug": "Fallo",
+    "fb.type.praise": "Elogio",
+    "fb.type.other": "Otro",
+    "fb.msg.label": "Tu mensaje",
+    "fb.msg.ph": "¿Qué tienes en mente?",
+    "fb.email.label": "Correo (opcional, para poder responderte)",
+    "fb.email.ph": "tu@ejemplo.com",
+    "fb.send": "Enviar comentario →",
+    "fb.note": "Lo leemos todo. Tu opinión sincera marca la próxima actualización.",
+    "fb.result.ok": "Gracias: tu comentario va de camino al equipo.",
+    "fb.result.err": "No se ha podido enviar ahora mismo. Puedes escribirnos a ",
+    "fb.result.empty": "Escribe un mensaje breve primero, por favor.",
+    "fb.sending": "Enviando…",
     "meta.title": "Castly — Pega el texto como querías, en tu Mac",
     "meta.description": "Una utilidad de la barra de menús con 54 transformaciones de texto que se aplican al pegar: limpia URLs, HTML a Markdown, JSON con formato/minificado, cambios de mayúsculas, listas, herramientas de codificación y más. 100% en tu dispositivo. Pago único de $9.99, cero telemetría. macOS 14+.",
 
@@ -447,6 +491,28 @@ window.I18N = {
 
   /* ===================================================================== FR */
   fr: {
+    /* idiomas + feedback (v0.2.0) */
+    "hero.langs": "8 langues",
+    "marquee.5": "8 LANGUES",
+    "langs.label": "// Parle votre langue",
+    "langs.body": "Toute l'interface de Castly est traduite en 8 langues : elle suit la langue de votre Mac et parle la vôtre dès le départ. Aucune configuration.",
+    "fb.label": "// Votre avis",
+    "fb.title": "Aidez à façonner<br>Castly",
+    "fb.lead": "Un bug, ou une fonction qui vous manque ? Dites-le-nous — chaque message arrive directement à l'équipe qui développe Castly. Sans compte, sans pistage.",
+    "fb.type.idea": "Idée",
+    "fb.type.bug": "Bug",
+    "fb.type.praise": "Compliment",
+    "fb.type.other": "Autre",
+    "fb.msg.label": "Votre message",
+    "fb.msg.ph": "Qu'avez-vous en tête ?",
+    "fb.email.label": "E-mail (facultatif — pour vous répondre)",
+    "fb.email.ph": "vous@exemple.com",
+    "fb.send": "Envoyer →",
+    "fb.note": "Nous lisons tout. Vos retours sincères façonnent la prochaine mise à jour.",
+    "fb.result.ok": "Merci — votre message est en route vers l'équipe.",
+    "fb.result.err": "Envoi impossible pour le moment. Vous pouvez nous écrire à ",
+    "fb.result.empty": "Veuillez d'abord écrire un court message.",
+    "fb.sending": "Envoi…",
     "meta.title": "Castly — Collez le texte comme vous le vouliez, sur votre Mac",
     "meta.description": "Un utilitaire de barre de menus avec 54 transformations de texte appliquées au collage : nettoyage des URL, HTML vers Markdown, JSON formaté/minifié, casse, listes, outils d'encodage et plus. 100 % sur l'appareil. Achat unique de 9,99 $, zéro télémétrie. macOS 14+.",
 
@@ -658,6 +724,28 @@ window.I18N = {
 
   /* ===================================================================== DE */
   de: {
+    /* idiomas + feedback (v0.2.0) */
+    "hero.langs": "8 Sprachen",
+    "marquee.5": "8 SPRACHEN",
+    "langs.label": "// Spricht deine Sprache",
+    "langs.body": "Die gesamte Oberfläche von Castly ist in 8 Sprachen übersetzt – sie folgt der Sprache deines Macs und spricht von Anfang an deine. Ohne Einrichtung.",
+    "fb.label": "// Feedback",
+    "fb.title": "Gestalte<br>Castly mit",
+    "fb.lead": "Einen Fehler gefunden oder fehlt dir eine Funktion? Sag es uns — jede Nachricht geht direkt an das Team hinter Castly. Kein Konto, kein Tracking.",
+    "fb.type.idea": "Idee",
+    "fb.type.bug": "Fehler",
+    "fb.type.praise": "Lob",
+    "fb.type.other": "Sonstiges",
+    "fb.msg.label": "Deine Nachricht",
+    "fb.msg.ph": "Was beschäftigt dich?",
+    "fb.email.label": "E-Mail (optional — für unsere Antwort)",
+    "fb.email.ph": "du@beispiel.com",
+    "fb.send": "Feedback senden →",
+    "fb.note": "Wir lesen alles. Ehrliches Feedback prägt das nächste Update.",
+    "fb.result.ok": "Danke — dein Feedback ist auf dem Weg zum Team.",
+    "fb.result.err": "Senden gerade nicht möglich. Du kannst uns schreiben an ",
+    "fb.result.empty": "Bitte schreibe zuerst eine kurze Nachricht.",
+    "fb.sending": "Senden…",
     "meta.title": "Castly — Füge Text so ein, wie du ihn meintest, auf deinem Mac",
     "meta.description": "Ein Menüleisten-Werkzeug mit 54 Textumwandlungen, die beim Einfügen angewendet werden — URLs säubern, HTML zu Markdown, JSON formatieren/minimieren, Groß-/Kleinschreibung, Listen, Encode-/Dev-Tools und mehr. 100 % auf dem Gerät. Einmalig 9,99 $, null Telemetrie. macOS 14+.",
 
@@ -869,6 +957,28 @@ window.I18N = {
 
   /* ===================================================================== IT */
   it: {
+    /* idiomas + feedback (v0.2.0) */
+    "hero.langs": "8 lingue",
+    "marquee.5": "8 LINGUE",
+    "langs.label": "// Parla la tua lingua",
+    "langs.body": "L'intera interfaccia di Castly è tradotta in 8 lingue: segue la lingua del tuo Mac e parla la tua fin da subito. Senza configurare nulla.",
+    "fb.label": "// Feedback",
+    "fb.title": "Aiuta a migliorare<br>Castly",
+    "fb.lead": "Hai trovato un bug o vorresti una funzione in più? Dillo a noi: ogni messaggio arriva direttamente a chi sviluppa Castly. Nessun account, nessun tracciamento.",
+    "fb.type.idea": "Idea",
+    "fb.type.bug": "Bug",
+    "fb.type.praise": "Elogio",
+    "fb.type.other": "Altro",
+    "fb.msg.label": "Il tuo messaggio",
+    "fb.msg.ph": "A cosa stai pensando?",
+    "fb.email.label": "Email (facoltativa — per risponderti)",
+    "fb.email.ph": "tu@esempio.com",
+    "fb.send": "Invia feedback →",
+    "fb.note": "Leggiamo tutto. Un feedback sincero plasma il prossimo aggiornamento.",
+    "fb.result.ok": "Grazie — il tuo feedback è in arrivo al team.",
+    "fb.result.err": "Impossibile inviare ora. Puoi scriverci a ",
+    "fb.result.empty": "Scrivi prima un breve messaggio.",
+    "fb.sending": "Invio…",
     "meta.title": "Castly — Incolla il testo come volevi, sul tuo Mac",
     "meta.description": "Un'utility nella barra dei menu con 54 trasformazioni di testo applicate quando incolli — pulisci URL, da HTML a Markdown, JSON formattato/minificato, cambi di maiuscole, elenchi, strumenti di codifica e altro. 100% sul dispositivo. Una tantum $9.99, zero telemetria. macOS 14+.",
 
@@ -1080,6 +1190,28 @@ window.I18N = {
 
   /* ===================================================================== PT */
   pt: {
+    /* idiomas + feedback (v0.2.0) */
+    "hero.langs": "8 idiomas",
+    "marquee.5": "8 IDIOMAS",
+    "langs.label": "// Fala a sua língua",
+    "langs.body": "Toda a interface do Castly está traduzida em 8 idiomas: acompanha o idioma do seu Mac e fala o seu desde o início. Sem configurar nada.",
+    "fb.label": "// Feedback",
+    "fb.title": "Ajude a melhorar<br>o Castly",
+    "fb.lead": "Encontrou um erro ou gostaria de mais uma função? Diga-nos — cada mensagem vai direto para quem desenvolve o Castly. Sem conta, sem rastreio.",
+    "fb.type.idea": "Ideia",
+    "fb.type.bug": "Erro",
+    "fb.type.praise": "Elogio",
+    "fb.type.other": "Outro",
+    "fb.msg.label": "A sua mensagem",
+    "fb.msg.ph": "O que tem em mente?",
+    "fb.email.label": "E-mail (opcional — para podermos responder)",
+    "fb.email.ph": "voce@exemplo.com",
+    "fb.send": "Enviar feedback →",
+    "fb.note": "Lemos tudo. Feedback sincero molda a próxima atualização.",
+    "fb.result.ok": "Obrigado — o seu feedback está a caminho da equipa.",
+    "fb.result.err": "Não foi possível enviar agora. Pode escrever-nos para ",
+    "fb.result.empty": "Escreva primeiro uma mensagem breve.",
+    "fb.sending": "A enviar…",
     "meta.title": "Castly — Cole o texto do jeito que você quis, no seu Mac",
     "meta.description": "Um utilitário na barra de menus com 54 transformações de texto aplicadas ao colar — limpar URLs, HTML para Markdown, JSON formatado/minificado, mudanças de maiúsculas, listas, ferramentas de codificação e mais. 100% no dispositivo. Pagamento único de $9.99, zero telemetria. macOS 14+.",
 
@@ -1291,6 +1423,28 @@ window.I18N = {
 
   /* ===================================================================== JA */
   ja: {
+    /* idiomas + feedback (v0.2.0) */
+    "hero.langs": "8言語",
+    "marquee.5": "8言語対応",
+    "langs.label": "// あなたの言語で",
+    "langs.body": "Castly のインターフェースは 8 言語に対応。Mac の言語に合わせて、最初からあなたの言語で表示されます。設定は不要です。",
+    "fb.label": "// フィードバック",
+    "fb.title": "Castly を<br>育てよう",
+    "fb.lead": "バグを見つけた、こんな機能がほしい——ぜひ教えてください。メッセージは Castly の開発チームに直接届きます。アカウント不要、追跡なし。",
+    "fb.type.idea": "アイデア",
+    "fb.type.bug": "バグ",
+    "fb.type.praise": "ほめ言葉",
+    "fb.type.other": "その他",
+    "fb.msg.label": "メッセージ",
+    "fb.msg.ph": "ご意見をどうぞ",
+    "fb.email.label": "メール（任意・返信用）",
+    "fb.email.ph": "you@example.com",
+    "fb.send": "送信する →",
+    "fb.note": "すべて拝見します。率直なご意見が次のアップデートをつくります。",
+    "fb.result.ok": "ありがとうございます。フィードバックをチームにお送りしました。",
+    "fb.result.err": "現在送信できませんでした。こちらまでメールでお知らせください: ",
+    "fb.result.empty": "まず短いメッセージを入力してください。",
+    "fb.sending": "送信中…",
     "meta.title": "Castly — Macで、意図したとおりに貼り付け",
     "meta.description": "貼り付けと同時に54種類のテキスト変換を適用するメニューバーユーティリティ。URLのクリーンアップ、HTMLからMarkdownへ、JSONの整形/圧縮、大文字小文字の変更、リスト、エンコード/開発ツールなど。100%デバイス上で処理。買い切り$9.99、テレメトリーなし。macOS 14以降。",
 
@@ -1502,6 +1656,28 @@ window.I18N = {
 
   /* ================================================================= zh-Hans */
   "zh-Hans": {
+    /* idiomas + feedback (v0.2.0) */
+    "hero.langs": "8 种语言",
+    "marquee.5": "8 种语言",
+    "langs.label": "// 说你的语言",
+    "langs.body": "Castly 的整个界面已本地化为 8 种语言：跟随你的 Mac 语言，开箱即用地说你的语言。无需设置。",
+    "fb.label": "// 反馈",
+    "fb.title": "帮助打磨<br>Castly",
+    "fb.lead": "发现了问题，或希望增加某个功能？告诉我们——每条留言都会直达 Castly 的开发团队。无需账户，绝不追踪。",
+    "fb.type.idea": "建议",
+    "fb.type.bug": "问题",
+    "fb.type.praise": "称赞",
+    "fb.type.other": "其他",
+    "fb.msg.label": "你的留言",
+    "fb.msg.ph": "你在想什么？",
+    "fb.email.label": "邮箱（可选——以便回复你）",
+    "fb.email.ph": "you@example.com",
+    "fb.send": "发送反馈 →",
+    "fb.note": "我们会认真阅读每一条。真诚的反馈塑造下一次更新。",
+    "fb.result.ok": "谢谢——你的反馈正在发往团队。",
+    "fb.result.err": "暂时无法发送。你可以发邮件给我们： ",
+    "fb.result.empty": "请先写一条简短的留言。",
+    "fb.sending": "发送中…",
     "meta.title": "Castly — 在你的 Mac 上，把文本粘贴成你想要的样子",
     "meta.description": "一款菜单栏工具，粘贴时即可应用 54 种文本转换——清理网址、HTML 转 Markdown、JSON 美化/压缩、大小写转换、列表、编码/开发工具等。100% 本地处理。一次性 $9.99，零遥测。macOS 14 及以上。",
 
