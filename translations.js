@@ -25,9 +25,10 @@ window.I18N = {
 
   /* ===================================================================== */
   en: {
-    /* changelog (v0.2.2) */
+    /* changelog (v0.2.3) */
     "news.label": "// What's new",
     "news.latest": "Latest",
+    "news.023.1": "The menu-bar panel now reliably shows the full list of transformations on the latest macOS — pick any of the 54 and paste.",
     "news.022.1": "Castly now speaks your language — the whole interface is localized into 8 languages and follows your Mac automatically.",
     "news.021.1": "First public release: copy any text, pick a transformation from the menu bar, and paste it the way you want — with clean smart quotes, dashes and inline Markdown.",
     /* idiomas + feedback (v0.2.0) */
@@ -263,9 +264,10 @@ window.I18N = {
 
   /* ===================================================================== ES */
   es: {
-    /* changelog (v0.2.2) */
+    /* changelog (v0.2.3) */
     "news.label": "// Novedades",
     "news.latest": "Última",
+    "news.023.1": "El panel de la barra de menús ahora muestra de forma fiable la lista completa de transformaciones en las últimas versiones de macOS — elige cualquiera de las 54 y pega.",
     "news.022.1": "Castly ya habla tu idioma: toda la interfaz está traducida a 8 idiomas y sigue automáticamente el idioma de tu Mac.",
     "news.021.1": "Primera versión pública: copia cualquier texto, elige una transformación desde la barra de menús y pégalo como quieras — con comillas tipográficas, guiones y Markdown en línea bien resueltos.",
     /* idiomas + feedback (v0.2.0) */
@@ -501,9 +503,10 @@ window.I18N = {
 
   /* ===================================================================== FR */
   fr: {
-    /* changelog (v0.2.2) */
+    /* changelog (v0.2.3) */
     "news.label": "// Nouveautés",
     "news.latest": "Récent",
+    "news.023.1": "Le panneau de la barre des menus affiche désormais de façon fiable la liste complète des transformations sur les dernières versions de macOS — choisissez l'une des 54 et collez.",
     "news.022.1": "Castly parle désormais votre langue — toute l'interface est traduite en 8 langues et suit automatiquement la langue de votre Mac.",
     "news.021.1": "Première version publique : copiez n'importe quel texte, choisissez une transformation depuis la barre des menus et collez-le comme vous voulez — guillemets typographiques, tirets et Markdown en ligne soignés.",
     /* idiomas + feedback (v0.2.0) */
@@ -739,9 +742,10 @@ window.I18N = {
 
   /* ===================================================================== DE */
   de: {
-    /* changelog (v0.2.2) */
+    /* changelog (v0.2.3) */
     "news.label": "// Neuigkeiten",
     "news.latest": "Neu",
+    "news.023.1": "Das Menüleisten-Panel zeigt jetzt zuverlässig die vollständige Liste der Umwandlungen unter aktuellem macOS — wähle eine der 54 und füge ein.",
     "news.022.1": "Castly spricht jetzt deine Sprache — die gesamte Oberfläche ist in 8 Sprachen übersetzt und folgt automatisch der Sprache deines Macs.",
     "news.021.1": "Erste öffentliche Version: beliebigen Text kopieren, in der Menüleiste eine Umwandlung wählen und so einfügen, wie du willst — mit sauberen typografischen Anführungszeichen, Gedankenstrichen und Inline-Markdown.",
     /* idiomas + feedback (v0.2.0) */
@@ -977,9 +981,10 @@ window.I18N = {
 
   /* ===================================================================== IT */
   it: {
-    /* changelog (v0.2.2) */
+    /* changelog (v0.2.3) */
     "news.label": "// Novità",
     "news.latest": "Ultima",
+    "news.023.1": "Il pannello nella barra dei menu ora mostra in modo affidabile l'elenco completo delle trasformazioni sulle ultime versioni di macOS — scegline una tra le 54 e incolla.",
     "news.022.1": "Castly ora parla la tua lingua: l'intera interfaccia è tradotta in 8 lingue e segue automaticamente la lingua del tuo Mac.",
     "news.021.1": "Prima versione pubblica: copia qualsiasi testo, scegli una trasformazione dalla barra dei menu e incollalo come vuoi — con virgolette tipografiche, trattini e Markdown inline puliti.",
     /* idiomas + feedback (v0.2.0) */
@@ -1215,9 +1220,10 @@ window.I18N = {
 
   /* ===================================================================== PT */
   pt: {
-    /* changelog (v0.2.2) */
+    /* changelog (v0.2.3) */
     "news.label": "// Novidades",
     "news.latest": "Recente",
+    "news.023.1": "O painel da barra de menus agora mostra de forma fiável a lista completa de transformações nas versões mais recentes do macOS — escolhe uma das 54 e cola.",
     "news.022.1": "O Castly agora fala a tua língua — toda a interface está traduzida em 8 idiomas e segue automaticamente o idioma do teu Mac.",
     "news.021.1": "Primeira versão pública: copie qualquer texto, escolha uma transformação na barra de menus e cole como quiser — com aspas tipográficas, travessões e Markdown inline corretos.",
     /* idiomas + feedback (v0.2.0) */
@@ -1453,9 +1459,10 @@ window.I18N = {
 
   /* ===================================================================== JA */
   ja: {
-    /* changelog (v0.2.2) */
+    /* changelog (v0.2.3) */
     "news.label": "// 新着情報",
     "news.latest": "最新",
+    "news.023.1": "メニューバーのパネルが最新の macOS でも変換の一覧をすべて確実に表示するようになりました——54 種類から選んで貼り付けるだけです。",
     "news.022.1": "Castly があなたの言語に対応しました。インターフェース全体が8言語にローカライズされ、Mac の言語に自動で合わせます。",
     "news.021.1": "最初の公開リリース：任意のテキストをコピーし、メニューバーから変換を選んで思いどおりに貼り付け——スマートクォート・ダッシュ・インライン Markdown もきれいに処理。",
     /* idiomas + feedback (v0.2.0) */
@@ -1691,9 +1698,10 @@ window.I18N = {
 
   /* ================================================================= zh-Hans */
   "zh-Hans": {
-    /* changelog (v0.2.2) */
+    /* changelog (v0.2.3) */
     "news.label": "// 新功能",
     "news.latest": "最新",
+    "news.023.1": "菜单栏面板现在能在最新版 macOS 上稳定显示完整的转换列表——从 54 种中任选一种即可粘贴。",
     "news.022.1": "Castly 现在会说你的语言——整个界面已本地化为 8 种语言，并自动跟随 Mac 的语言。",
     "news.021.1": "首个公开版本：复制任意文本，从菜单栏选择一种转换，再按你想要的方式粘贴——智能引号、破折号和行内 Markdown 都处理得当。",
     /* idiomas + feedback (v0.2.0) */
