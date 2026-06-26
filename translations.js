@@ -252,6 +252,7 @@ window.I18N = {
     "more.slimr": "Compress, OCR & PDF tools",
     "more.lightcap": "10-second screen GIFs",
     "more.scrubd": "Clean metadata before you share",
+    "more.orthoframe": "Sort clinic photos into ABO sheets",
 
     "footer.copy": "© 2026 Perfect Paradox Ltd · NI739317",
     "footer.privacy": "Privacy",
@@ -491,6 +492,7 @@ window.I18N = {
     "more.slimr": "Compresión, OCR y herramientas PDF",
     "more.lightcap": "GIFs de pantalla de 10 segundos",
     "more.scrubd": "Limpia los metadatos antes de compartir",
+    "more.orthoframe": "Ordena fotos clínicas en hojas ABO",
 
     "footer.copy": "© 2026 Perfect Paradox Ltd · NI739317",
     "footer.privacy": "Privacidad",
@@ -730,6 +732,7 @@ window.I18N = {
     "more.slimr": "Compression, OCR et outils PDF",
     "more.lightcap": "GIF d'écran de 10 secondes",
     "more.scrubd": "Nettoyez les métadonnées avant de partager",
+    "more.orthoframe": "Trie les photos cliniques en fiches ABO",
 
     "footer.copy": "© 2026 Perfect Paradox Ltd · NI739317",
     "footer.privacy": "Confidentialité",
@@ -969,6 +972,7 @@ window.I18N = {
     "more.slimr": "Komprimieren, OCR und PDF-Tools",
     "more.lightcap": "10-Sekunden-Bildschirm-GIFs",
     "more.scrubd": "Metadaten vor dem Teilen säubern",
+    "more.orthoframe": "Klinikfotos in ABO-Blätter sortieren",
 
     "footer.copy": "© 2026 Perfect Paradox Ltd · NI739317",
     "footer.privacy": "Datenschutz",
@@ -1208,6 +1212,7 @@ window.I18N = {
     "more.slimr": "Compressione, OCR e strumenti PDF",
     "more.lightcap": "GIF dello schermo di 10 secondi",
     "more.scrubd": "Pulisci i metadati prima di condividere",
+    "more.orthoframe": "Ordina le foto cliniche in schede ABO",
 
     "footer.copy": "© 2026 Perfect Paradox Ltd · NI739317",
     "footer.privacy": "Privacy",
@@ -1447,6 +1452,7 @@ window.I18N = {
     "more.slimr": "Compressão, OCR e ferramentas PDF",
     "more.lightcap": "GIFs de tela de 10 segundos",
     "more.scrubd": "Limpe os metadados antes de compartilhar",
+    "more.orthoframe": "Organiza fotos clínicas em fichas ABO",
 
     "footer.copy": "© 2026 Perfect Paradox Ltd · NI739317",
     "footer.privacy": "Privacidade",
@@ -1686,6 +1692,7 @@ window.I18N = {
     "more.slimr": "圧縮、OCR、PDFツール",
     "more.lightcap": "10秒の画面GIF",
     "more.scrubd": "共有前にメタデータをクリーンに",
+    "more.orthoframe": "臨床写真を ABO シートに整理",
 
     "footer.copy": "© 2026 Perfect Paradox Ltd · NI739317",
     "footer.privacy": "プライバシー",
@@ -1925,6 +1932,7 @@ window.I18N = {
     "more.slimr": "压缩、OCR 和 PDF 工具",
     "more.lightcap": "10 秒屏幕 GIF",
     "more.scrubd": "分享前清理元数据",
+    "more.orthoframe": "把临床照片归入 ABO 表",
 
     "footer.copy": "© 2026 Perfect Paradox Ltd · NI739317",
     "footer.privacy": "隐私",
